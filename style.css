@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ /* vars */
+.dark-mode {
+    --background-color: #eee;
+    --text-color: #333;
+    --text-2: #fff;
+    --toggle-btn: #333;
+    --tr-odd: #e6e6e6;
+    --tr-even: #fff;
+    --href-color: #663300;
+    --icon-folder: url(./assets/folder.png);
+    --icon-image: url(./assets/image.png);
+    --icon-zip: url(./assets/zip.png);
+    --icon-audio: url(./assets/audio.png);
+    --icon-css: url(./assets/css.png);
+    --icon-file: url(./assets/file.png);
+    --icon-office: url(./assets/office.png);
+    --icon-video: url(./assets/video.png);
+    --icon-xml: url(./assets/xml.png);
+    --icon-script: url(./assets/script.png);
+    --icon-php: url(./assets/php.png);
+    --icon-overwatch: url(./assets/overwatch.png);
+}
+/* Dark Mode */
+#mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: var(--toggle-btn);
+    color: var(--text-2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+:root {
+    --background-color: #333;
+    --text-color: #fff;
+    --text-2: #232323;
+    --toggle-btn: #fff;
+    --tr-odd: #353535;
+    --tr-even: #4a4a4a;
+    --href-color: #d2d2d2;
+    --icon-folder: url(./assets/folder-white.png);
+    --icon-image: url(./assets/image-white.png);
+    --icon-zip: url(./assets/zip-white.png);
+    --icon-audio: url(./assets/audio-white.png);
+    --icon-css: url(./assets/css-white.png);
+    --icon-file: url(./assets/file-white.png);
+    --icon-office: url(./assets/office-white.png);
+    --icon-video: url(./assets/video-white.png);
+    --icon-xml: url(./assets/xml-white.png);
+    --icon-script: url(./assets/script-white.png);
+    --icon-php: url(./assets/php-white.png);
+    --icon-overwatch: url(./assets/overwatch-white.png);
+
+}
+/* Rest*/
+body {
+    font: 14px Sans-Serif;
+    padding: 50px;
+    background-color: var(--background-color);
+    color: var(--text-2);
+;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0 12px 0;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--text-2);
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 0 12px 0;
+}
+
+#container {
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background: var(--background-color);
+}
+
+table {
+    background-color: var(--tr-even);
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+}
+
+th {
+    background-color: #fe02bb;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+th small {
+    font-size: 9px;
+}
+
+td,
+th {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+td a {
+    color: var(--href-color);
+    display: block;
+    padding: 5px 10px;
+}
+
+th a {
+    padding-left: 0
+}
+
+/*
+td:first-of-type a {
+    background: var(--icon-folder) no-repeat 10px 50%;
+    background-size: 20px;
+    padding-left: 35px;
+}
+*/
+
+th:first-of-type {
+    padding-left: 35px;
+}
+
+td:not(:first-of-type) a {
+    background-image: none !important;
+}
+
+tr:nth-of-type(odd) {
+    background-color: var(--tr-odd);
+}
+
+tr:hover td {
+    background-color: #CACACA;
+}
+
+tr:hover td a {
+    color: #000;
+}
+
+
+/* icons for file types (icons by famfamfam) */
+
+/* other files */
+
+table tr td:first-of-type a[href$=".txt"] {
+    background-image: var(--icon-file);
+}
+
+/* images 
+
+table tr td:first-of-type a[href$=".jpg"],
+table tr td:first-of-type a[href$=".png"],
+table tr td:first-of-type a[href$=".gif"],
+table tr td:first-of-type a[href$=".svg"],
+table tr td:first-of-type a[href$=".tiff"],
+table tr td:first-of-type a[href$=".tif"],
+table tr td:first-of-type a[href$=".webp"],
+table tr td:first-of-type a[href$=".jpeg"] {
+    background-image: var(--icon-image);
+}*/
+
+
+/* zips 
+
+table tr td:first-of-type a[href$=".zip"] {
+    background-image: var(--icon-zip);
+    display: none;
+}*/
+
+
+/* css */
+
+table tr td:first-of-type a[href$=".css"] {
+    background-image: var(--icon-css);
+}
+
+
+/* docs */
+
+table tr td:first-of-type a[href$=".doc"],
+table tr td:first-of-type a[href$=".docx"],
+table tr td:first-of-type a[href$=".ppt"],
+table tr td:first-of-type a[href$=".pptx"],
+table tr td:first-of-type a[href$=".pps"],
+table tr td:first-of-type a[href$=".ppsx"],
+table tr td:first-of-type a[href$=".xls"],
+table tr td:first-of-type a[href$=".xlsx"] {
+    background-image: var(--icon-office);
+}
+
+
+/* videos 
+
+table tr td:first-of-type a[href$=".avi"],
+table tr td:first-of-type a[href$=".wmv"],
+table tr td:first-of-type a[href$=".mp4"],
+table tr td:first-of-type a[href$=".mov"],
+table tr td:first-of-type a[href$=".m4a"] {
+    background-image: var(--icon-video);
+}*/
+
+
+/* audio 
+
+table tr td:first-of-type a[href$=".mp3"],
+table tr td:first-of-type a[href$=".ogg"],
+table tr td:first-of-type a[href$=".aac"],
+table tr td:first-of-type a[href$=".wma"] {
+    background-image: var(--icon-audio);
+}*/
+
+/* Overwatch Datamine Files
+table tr td:first-of-type a[href$=".owentity"],
+table tr td:first-of-type a[href$=".owanim"],
+table tr td:first-of-type a[href$=".owanimclip"],
+table tr td:first-of-type a[href$=".owmat"],
+table tr td:first-of-type a[href$=".owmdl"] {
+    background-image: var(--icon-overwatch);
+}*/
+/* web pages 
+
+table tr td:first-of-type a[href$=".html"],
+table tr td:first-of-type a[href$=".htm"],
+table tr td:first-of-type a[href$=".xml"] {
+    background-image: var(--icon-xml);
+}*/
+
+table tr td:first-of-type a[href$=".php"] {
+    background-image: var(--icon-php);
+}
+
+table tr td:first-of-type a[href$=".js"] {
+    background-image: var(--icon-script);
+}
+/*
+#fileList table tr td:first-of-type a[href$=".png"] {
+    background-image: var(--icon-image);
+}*/
+
+
+/* Style for folder links */
+table tr td:first-of-type a.folder {
+    background: var(--icon-folder) no-repeat 10px 50%;
+    background-size: 20px;
+    padding-left: 35px;
+}
+
+/* Style for image links *//*
+table tr td:first-of-type a.image {
+    background-image: var(--icon-image);
+} */
