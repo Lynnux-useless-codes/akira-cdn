@@ -1,0 +1,74 @@
+[
+    {
+        "name": "1000x1000",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690505814.0
+    },
+    {
+        "name": "112x112",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690506182.0
+    },
+    {
+        "name": "28x28",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690505776.0
+    },
+    {
+        "name": "336x336",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690506120.0
+    },
+    {
+        "name": "500x500",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690506076.0
+    },
+    {
+        "name": "56x56",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690505786.0
+    },
+    {
+        "name": "Animated",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1690459208.0
+    },
+    {
+        "name": "desktop.ini",
+        "type": ".INI file",
+        "size": "0.13 KB",
+        "dateModified": 1690131098.0
+    },
+    {
+        "name": "Mercy.zip",
+        "type": ".ZIP file",
+        "size": "19485.65 KB",
+        "dateModified": 1696003917.4004147
+    },
+    {
+        "name": "READ ME.txt",
+        "type": ".TXT file",
+        "size": "1.25 KB",
+        "dateModified": 1690459220.0
+    },
+    {
+        "name": "Template-colored.png",
+        "type": ".PNG file",
+        "size": "783.54 KB",
+        "dateModified": 1689788624.0
+    },
+    {
+        "name": "Template.png",
+        "type": ".PNG file",
+        "size": "786.09 KB",
+        "dateModified": 1689788540.0
+    }
+]
