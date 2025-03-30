@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/my-avatar_120.webp">
+    <title>CDN - Lynnux</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <!-- Discord Embed -->
+    <meta property="og:title" content="Reaction Images" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://cdn.lynnux.xyz/Reactions/" />
+    <meta name="theme-color" content="#ff47ff">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSD2Q72W1H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YSD2Q72W1H');
+    </script>
+</head>
+<body>
+    <h1 id="fileLocation">/ParentDirectory/CurrentDirectory/</h1>
+    <div id="container">
+        <table class="sortable">
+            <thead>
+                <tr >
+                    <th>Filename</th>
+                    <th>Type</th>
+                    <th>Size</th>
+                    <th>Date Modified</th>
+                </tr>
+            </thead>
+            <tr class='directory'>
+                <td><a href='../' class='name'>...</a></td>
+                <td><a href='../'>&lt;GO BACK&gt;</a></td>
+                <td sorttable_customkey='1'><a href='../'>N/A</a></td>
+                <td sorttable_customkey='1'><a href='../'>N/A</a></td>
+            </tr>
+            <tbody id="fileList"></tbody>
+        </table>
+    </div>
+    <button id="mode-toggle">
+        <ion-icon name="moon-outline"></ion-icon>
+    </button>
+    <script src="script.js"></script>
+    <script src="/mode.js"></script>
+</body>
+<script>
+    // Get the current URL of the page
+    var url = window.location.href;
+
+    // Extract the parent directory and directory names from it
+    var parent_directory = url.split("/").slice(-3, -2)[0];
+    var directory = url.split("/").slice(-2, -1)[0];
+
+    // Set the content of the h1 element to the desired value
+    var fileLocation = document.getElementById("fileLocation");
+    fileLocation.innerHTML = "/" + parent_directory + "/" + directory + "/";
+</script>
+</html>

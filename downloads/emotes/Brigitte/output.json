@@ -1,0 +1,44 @@
+[
+    {
+        "name": "1000x1000",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1708361500.0
+    },
+    {
+        "name": "112x112",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1708361730.0
+    },
+    {
+        "name": "28x28",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1708362010.0
+    },
+    {
+        "name": "56x56",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1708361872.0
+    },
+    {
+        "name": "animation",
+        "type": "&lt;DIRECTORY&gt;",
+        "size": "N/A",
+        "dateModified": 1708369666.0
+    },
+    {
+        "name": "Brigitte.zip",
+        "type": ".ZIP file",
+        "size": "10533.58 KB",
+        "dateModified": 1743292558.3620863
+    },
+    {
+        "name": "Template.jpg",
+        "type": ".JPG file",
+        "size": "850.29 KB",
+        "dateModified": 1743292519.7806458
+    }
+]
